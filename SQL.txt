@@ -1,0 +1,35 @@
+question1:Write a query to obtain all the records from the above table 
+SELECT * FROM Students;
+
+2.Write a query to obtain the names and marks of all the students
+SELECT name, marks FROM Students;
+
+3.Write a query to return all the unique towns from the table
+SELECT DISTINCT town FROM Students;
+
+4.Write a query to obtain all the names of the students from ruiru
+ SELECT * FROM Students WHERE town='ruiru';  //also  SELECT * FROM Students WHERE town LIKE 'r%';
+
+5.Write a query to obtain all records of the students who scored over 85 marks
+  SELECT * FROM Students WHERE marks=85;
+
+6.Write a query to obtain the names and marks of the students in ascending order of marks
+SELECT * FROM Students ORDER BY name,marks ASC;
+
+7.Write a query to return all the students who scored over 80 marks from
+Lodwar
+SELECT * FROM Students WHERE town='Lodwar' AND (marks>=85);
+
+8.Write a query to obtain the names of the students who scored above 70 marks
+outside Nairobi
+SELECT name FROM Students WHERE town != "Nairobi" AND marks> 70;
+
+9.Write a query to obtain all the students records in alphabetical order of their
+names
+SELECT * FROM Students ORDER BY names ASC;
+
+10.Write a query to obtain the names of the students who either reside in Nairobi
+ior scored above 80 marks
+SELECT name FROM Students WHERE town = "Nairobi" OR marks > 80;
+
+
